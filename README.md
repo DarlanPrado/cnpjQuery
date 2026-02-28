@@ -80,7 +80,7 @@ cd cnpjQuery
 ```
 
 Configure seu token da ReceitaWS em / Set your ReceitaWS token in  
-`tinno2/Tinno2/appsettings.Development.json`:
+`api/Tinno2/appsettings.Development.json`:
 
 ```json
 {
@@ -97,7 +97,7 @@ Configure seu token da ReceitaWS em / Set your ReceitaWS token in
 ```
 
 ```bash
-cd tinno2/Tinno2
+cd api/Tinno2
 dotnet run
 # API disponível em / API available at: https://localhost:7040
 # Scalar UI (docs): https://localhost:7040/scalar
@@ -107,7 +107,7 @@ dotnet run
 
 ```bash
 # Em outro terminal / In another terminal
-cd tinnoFrontend
+cd frontend
 
 # Instalar dependências / Install dependencies
 pnpm install
@@ -128,7 +128,7 @@ pnpm dev
 ### Backend
 
 ```bash
-cd tinno2
+cd api
 dotnet test Tinno2.Tests/Tinno2.Tests.csproj --verbosity normal
 # 21 testes / 21 tests
 ```
@@ -136,7 +136,7 @@ dotnet test Tinno2.Tests/Tinno2.Tests.csproj --verbosity normal
 ### Frontend
 
 ```bash
-cd tinnoFrontend
+cd frontend
 
 # Executar uma vez / Run once
 pnpm test:run
@@ -155,7 +155,7 @@ pnpm test:coverage
 
 ```
 cnpjQuery/
-├── tinno2/                        # Backend (ASP.NET Core 10)
+├── api/                           # Backend (ASP.NET Core 10)
 │   ├── Tinno2.slnx                # Solution file
 │   ├── Tinno2/                    # Projeto principal / Main project
 │   │   ├── Controllers/           # CnpjController
@@ -168,7 +168,7 @@ cnpjQuery/
 │       ├── Controllers/           # CnpjControllerTests (10 testes)
 │       └── Services/              # ReceitaFederalServiceTests (5) + SimplesNacionalServiceTests (6)
 │
-├── tinnoFrontend/                 # Frontend (React + Vite)
+├── frontend/                      # Frontend (React + Vite)
 │   ├── src/
 │   │   ├── api/                   # client.ts, cnpj.ts, schema.d.ts (gerado/generated)
 │   │   ├── components/ui/         # Componentes shadcn/ui
