@@ -1,0 +1,55 @@
+## ─── .NET ────────────────────────────────────────────────────────────────────
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / Rider
+.vs/
+*.user
+*.suo
+.idea/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Publish output
+**/publish/
+
+# .NET secrets
+**/appsettings.Development.json
+
+## ─── Node / Frontend ─────────────────────────────────────────────────────────
+node_modules/
+dist/
+.pnpm-store/
+
+# Vite cache
+.vite/
+
+# Coverage
+coverage/
+
+## ─── Misc ────────────────────────────────────────────────────────────────────
+# Sensitive files
+token.txt
+
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code (keep shared settings if desired)
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Tinno2.Tests/Tinno2.Tests.csproj" />
+  <Project Path="Tinno2/Tinno2.csproj" />
+</Solution>
